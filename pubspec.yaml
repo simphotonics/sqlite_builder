@@ -1,0 +1,33 @@
+name: sqlite_builder
+
+description: Model generator processing annotated dart files containing [Table]
+  classes. Works together with sqlite_entity.
+
+version: 0.0.1
+
+publish_to: none
+
+environment:
+  sdk: "^3.0.0"
+
+dependencies:
+  analyzer: ^6.0.0
+  build: ^2.4.0
+  build_config: ^1.1.1
+  code_builder: ^4.5.0
+  dart_style: ^2.3.1
+  exception_templates: ^0.2.4
+  lazy_memo: ^0.1.7
+  merging_builder: ^0.2.5
+  quote_buffer: ^0.2.3
+  source_gen: ^1.3.2
+  sqlite_entity:
+    git:
+      url: git@github.com:simphotonics/sqlite_entity.git
+      ref: main
+
+dev_dependencies:
+  build_runner: ^2.4.5
+  build_test: ^2.1.7
+  lints: ^2.1.1
+  test: ^1.24.4
